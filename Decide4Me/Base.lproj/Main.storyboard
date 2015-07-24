@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Decide4Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9j-DF-g4J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="decide4me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zim-G5-WXc">
+                                <rect key="frame" x="58" y="28" width="259" height="56"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="46"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="round-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="MOE-qT-Cbe">
+                                <rect key="frame" x="137" y="121" width="100" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-Tt-meN">
+                                <rect key="frame" x="156" y="150" width="63" height="41"/>
+                                <color key="tintColor" red="0.8862745098" green="0.29411764709999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="40"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSq-cK-Gd5">
+                                <rect key="frame" x="79" y="138" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <color key="tintColor" red="0.8862745098" green="0.29411764709999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-ja-AgH">
+                                <rect key="frame" x="245" y="138" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="tintColor" red="0.8862745098" green="0.29411764709999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter first item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgZ-ZP-e1B">
+                                <rect key="frame" x="83" y="262" width="293" height="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dkw-P1-aCA">
+                                <rect key="frame" x="83" y="290" width="293" height="2"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter second item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z91-2l-MCp">
+                                <rect key="frame" x="83" y="313" width="293" height="30"/>
+                                <color key="textColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider.png" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-Md-31w">
+                                <rect key="frame" x="83" y="341" width="293" height="2"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter third item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b79-nH-yq4">
+                                <rect key="frame" x="83" y="368" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider.png" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-ky-iVN">
+                                <rect key="frame" x="83" y="396" width="293" height="2"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter fourth item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wHI-ad-E7I">
+                                <rect key="frame" x="83" y="421" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider.png" translatesAutoresizingMaskIntoConstraints="NO" id="G7X-pz-nNl">
+                                <rect key="frame" x="83" y="449" width="293" height="2"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4b-sq-miK">
+                                <rect key="frame" x="41" y="497" width="293" height="54"/>
+                                <state key="normal" image="decidebutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obA-S6-5Sz" userLabel="Ad View">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;AD SPACE&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oC-dy-Ujx">
+                                        <rect key="frame" x="142" y="14" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.8862745098" green="0.29411764709999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="PdG-eV-KPo">
+                                <rect key="frame" x="35" y="267" width="25" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZxT-aq-fvm">
+                                <rect key="frame" x="35" y="318" width="25" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7F-Pc-AUQ">
+                                <rect key="frame" x="35" y="373" width="25" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="EPx-HR-TgF">
+                                <rect key="frame" x="35" y="426" width="25" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addButton" destination="VFh-ja-AgH" id="fVo-IF-nAw"/>
+                        <outlet property="decideButton" destination="P4b-sq-miK" id="5NA-5J-bS5"/>
+                        <outlet property="inputField0" destination="fgZ-ZP-e1B" id="B5r-bb-eOi"/>
+                        <outlet property="inputField1" destination="Z91-2l-MCp" id="Rj0-U8-elt"/>
+                        <outlet property="inputField2" destination="b79-nH-yq4" id="YuG-7l-3wH"/>
+                        <outlet property="inputField3" destination="wHI-ad-E7I" id="IDf-eh-sGV"/>
+                        <outlet property="minusButton" destination="zSq-cK-Gd5" id="hkv-0V-2HI"/>
+                        <outlet property="numberOfItemsLabel" destination="i9h-Tt-meN" id="GsC-bB-FdG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="365.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background.png" width="750" height="1334"/>
+        <image name="Divider.png" width="611" height="2"/>
+        <image name="Logo.png" width="351" height="272"/>
+        <image name="decidebutton.png" width="650" height="110"/>
+        <image name="round-image.png" width="250" height="250"/>
+    </resources>
+</document>
