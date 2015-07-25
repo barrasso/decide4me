@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var minusButton: UIButton!
     @IBOutlet var addButton: UIButton!
+    @IBOutlet var clearButton: UIButton!
     @IBOutlet var decideButton: UIButton!
 
     @IBOutlet var inputField0: UITextField!
@@ -89,23 +90,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         } else {
             // reset to default
             resetUI()
+            for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
+                NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
+            }
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
     // MARK: Utility Functions
     
     func resetUI() {
         
         numberOfItems = 2
-        
-        // hide first two checks
         checkImage0.hidden = true
         checkImage1.hidden = true
         
@@ -222,6 +222,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Button Actions
     
+    @IBAction func clearButtonTapped(sender: AnyObject) {
+        resetUI()
+        
+        chosenItem = ""
+        firstItem = ""
+        secondItem = ""
+        thirdItem = ""
+        fourthItem = ""
+        inputField0.text = ""
+        inputField1.text = ""
+        inputField0.textColor = UIColor.whiteColor()
+        inputField1.textColor = UIColor.whiteColor()
+        inputField2.textColor = UIColor.whiteColor()
+        inputField3.textColor = UIColor.whiteColor()
+        numberOfItems = 2
+        numberOfItemsLabel.text = numberOfItems?.stringValue
+        
+        for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
+            NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
+        }
+    }
+    
     @IBAction func plusButtonTapped(sender: AnyObject) {
         
         switch(self.numberOfItems!.integerValue) {
@@ -268,11 +290,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func decideButtonTapped(sender: AnyObject) {
+        // clear
+        chosenItem = ""
+        inputField0.textColor = UIColor.whiteColor()
+        inputField1.textColor = UIColor.whiteColor()
+        inputField2.textColor = UIColor.whiteColor()
+        inputField3.textColor = UIColor.whiteColor()
+        for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
+            NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
+        }
+
         switch (self.numberOfItems!.integerValue) {
         case 2:
             var trimmedText0 = inputField0.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            if inputField0.text != "" || inputField1.text != "" || trimmedText0 != "" || trimmedText1 != "" {
+            if inputField0.text != "" && inputField1.text != "" && trimmedText0 != "" && trimmedText1 != "" {
                 let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setObject(decide4me(), forKey: "chosen")
                 defaults.setObject(numberOfItems, forKey: "number")
@@ -283,7 +315,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var trimmedText0 = inputField0.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             var trimmedText2 = inputField2.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            if inputField0.text != "" || inputField1.text != "" || inputField2.text != "" || trimmedText0 != "" || trimmedText1 != "" || trimmedText2 != "" {
+            if inputField0.text != "" && inputField1.text != "" && inputField2.text != "" && trimmedText0 != "" && trimmedText1 != "" && trimmedText2 != "" {
                 let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setObject(decide4me(), forKey: "chosen")
                 defaults.setObject(numberOfItems, forKey: "number")
@@ -296,7 +328,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             var trimmedText2 = inputField2.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             var trimmedText3 = inputField3.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            if inputField0.text != "" || inputField1.text != "" || inputField2.text != "" || inputField3.text != "" || trimmedText0 != "" || trimmedText1 != "" || trimmedText2 != "" || trimmedText3 != "" {
+            if inputField0.text != "" && inputField1.text != "" && inputField2.text != "" && inputField3.text != "" && trimmedText0 != "" && trimmedText1 != "" && trimmedText2 != "" && trimmedText3 != "" {
                 let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setObject(decide4me(), forKey: "chosen")
                 defaults.setObject(numberOfItems, forKey: "number")
