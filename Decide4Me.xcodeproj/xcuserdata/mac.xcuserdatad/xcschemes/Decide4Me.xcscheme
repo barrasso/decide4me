@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "043DEC961B62982A000B5D43"
-               BuildableName = "Decide4Me.app"
-               BlueprintName = "Decide4Me"
-               ReferencedContainer = "container:Decide4Me.xcodeproj">
+               BuildableName = "decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+               BlueprintName = "decide4me"
+               ReferencedContainer = "container:decide4me.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "043DECAB1B62982A000B5D43"
-               BuildableName = "Decide4MeTests.xctest"
-               BlueprintName = "Decide4MeTests"
-               ReferencedContainer = "container:Decide4Me.xcodeproj">
+               BuildableName = "decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest"
+               BlueprintName = "decide4meTests"
+               ReferencedContainer = "container:decide4me.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "043DECAB1B62982A000B5D43"
-               BuildableName = "Decide4MeTests.xctest"
-               BlueprintName = "Decide4MeTests"
-               ReferencedContainer = "container:Decide4Me.xcodeproj">
+               BuildableName = "decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest"
+               BlueprintName = "decide4meTests"
+               ReferencedContainer = "container:decide4me.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "043DEC961B62982A000B5D43"
-            BuildableName = "Decide4Me.app"
-            BlueprintName = "Decide4Me"
-            ReferencedContainer = "container:Decide4Me.xcodeproj">
+            BuildableName = "decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+            BlueprintName = "decide4me"
+            ReferencedContainer = "container:decide4me.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "043DEC961B62982A000B5D43"
-            BuildableName = "Decide4Me.app"
-            BlueprintName = "Decide4Me"
-            ReferencedContainer = "container:Decide4Me.xcodeproj">
+            BuildableName = "decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+            BlueprintName = "decide4me"
+            ReferencedContainer = "container:decide4me.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "043DEC961B62982A000B5D43"
-            BuildableName = "Decide4Me.app"
-            BlueprintName = "Decide4Me"
-            ReferencedContainer = "container:Decide4Me.xcodeproj">
+            BuildableName = "decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+            BlueprintName = "decide4me"
+            ReferencedContainer = "container:decide4me.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

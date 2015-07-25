@@ -33,12 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		043DEC971B62982A000B5D43 /* Decide4Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decide4Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043DEC971B62982A000B5D43 /* decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043DEC9B1B62982A000B5D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043DEC9C1B62982A000B5D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043DEC9E1B62982A000B5D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		043DECA11B62982A000B5D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		043DECAC1B62982A000B5D43 /* Decide4MeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Decide4MeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043DECAC1B62982A000B5D43 /* decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043DECB11B62982A000B5D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043DECB21B62982A000B5D43 /* Decide4MeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decide4MeTests.swift; sourceTree = "<group>"; };
 		043DECC01B62B0FE000B5D43 /* Divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Divider.png; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		043DEC981B62982A000B5D43 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				043DEC971B62982A000B5D43 /* Decide4Me.app */,
-				043DECAC1B62982A000B5D43 /* Decide4MeTests.xctest */,
+				043DEC971B62982A000B5D43 /* decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */,
+				043DECAC1B62982A000B5D43 /* decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		043DEC961B62982A000B5D43 /* Decide4Me */ = {
+		043DEC961B62982A000B5D43 /* decide4me */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 043DECB61B62982A000B5D43 /* Build configuration list for PBXNativeTarget "Decide4Me" */;
+			buildConfigurationList = 043DECB61B62982A000B5D43 /* Build configuration list for PBXNativeTarget "decide4me" */;
 			buildPhases = (
 				66FDA0085B848E42A1F86F97 /* Check Pods Manifest.lock */,
 				043DEC931B62982A000B5D43 /* Sources */,
@@ -179,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = Decide4Me;
+			name = decide4me;
 			productName = Decide4Me;
-			productReference = 043DEC971B62982A000B5D43 /* Decide4Me.app */;
+			productReference = 043DEC971B62982A000B5D43 /* decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		043DECAB1B62982A000B5D43 /* Decide4MeTests */ = {
+		043DECAB1B62982A000B5D43 /* decide4meTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 043DECB91B62982A000B5D43 /* Build configuration list for PBXNativeTarget "Decide4MeTests" */;
+			buildConfigurationList = 043DECB91B62982A000B5D43 /* Build configuration list for PBXNativeTarget "decide4meTests" */;
 			buildPhases = (
 				043DECA81B62982A000B5D43 /* Sources */,
 				043DECA91B62982A000B5D43 /* Frameworks */,
@@ -197,9 +197,9 @@
 			dependencies = (
 				043DECAE1B62982A000B5D43 /* PBXTargetDependency */,
 			);
-			name = Decide4MeTests;
+			name = decide4meTests;
 			productName = Decide4MeTests;
-			productReference = 043DECAC1B62982A000B5D43 /* Decide4MeTests.xctest */;
+			productReference = 043DECAC1B62982A000B5D43 /* decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "Decide4Me" */;
+			buildConfigurationList = 043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "decide4me" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				043DEC961B62982A000B5D43 /* Decide4Me */,
-				043DECAB1B62982A000B5D43 /* Decide4MeTests */,
+				043DEC961B62982A000B5D43 /* decide4me */,
+				043DECAB1B62982A000B5D43 /* decide4meTests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		043DECAE1B62982A000B5D43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 043DEC961B62982A000B5D43 /* Decide4Me */;
+			target = 043DEC961B62982A000B5D43 /* decide4me */;
 			targetProxy = 043DECAD1B62982A000B5D43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -428,11 +428,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mark Barrasso (3GBQ2H4QX7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Decide4Me/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -443,11 +443,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mark Barrasso (3GBQ2H4QX7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Decide4Me/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -466,7 +466,7 @@
 				);
 				INFOPLIST_FILE = Decide4MeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decide4Me.app/Decide4Me";
 			};
 			name = Debug;
@@ -481,7 +481,7 @@
 				);
 				INFOPLIST_FILE = Decide4MeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = decide4me.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decide4Me.app/Decide4Me";
 			};
 			name = Release;
@@ -489,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "Decide4Me" */ = {
+		043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "decide4me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				043DECB41B62982A000B5D43 /* Debug */,
@@ -498,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		043DECB61B62982A000B5D43 /* Build configuration list for PBXNativeTarget "Decide4Me" */ = {
+		043DECB61B62982A000B5D43 /* Build configuration list for PBXNativeTarget "decide4me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				043DECB71B62982A000B5D43 /* Debug */,
@@ -507,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		043DECB91B62982A000B5D43 /* Build configuration list for PBXNativeTarget "Decide4MeTests" */ = {
+		043DECB91B62982A000B5D43 /* Build configuration list for PBXNativeTarget "decide4meTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				043DECBA1B62982A000B5D43 /* Debug */,
