@@ -8,21 +8,16 @@
 
 import UIKit
 
-struct Decider {
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    var numberOfItems: NSNumber?
+    
     var firstItem: String?
     var secondItem: String?
     var thirdItem: String?
     var fourthItem: String?
     
     var chosenItem: String?
-    
-    var number: NSNumber?
-}
-
-class ViewController: UIViewController, UITextFieldDelegate {
-    
-    var currentDecider: Decider?
-    var numberOfItems: NSNumber?
     
     // MARK: Outlets
     @IBOutlet var numberOfItemsLabel: UILabel!
@@ -48,6 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         // set delegates
         inputField0.delegate = self
@@ -59,22 +55,40 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
         // check nsdefaults for exisiting decider obj
         let defaults = NSUserDefaults.standardUserDefaults()
-        if let decider = defaults.objectForKey("decider") as? Decider {
-            println("Found existing decider...")
-            currentDecider = decider
-            
-            // set values
-            numberOfItems = currentDecider?.number
-            numberOfItemsLabel.text = numberOfItems?.stringValue
+        
+        if let chosen: AnyObject = defaults.objectForKey("chosen") {
+            chosenItem = chosen as? String
+            println("Found existing decision...\(chosenItem)")
             
             // set previous inputs
-            print(currentDecider)
+            numberOfItems = defaults.objectForKey("number") as? NSNumber
+            numberOfItemsLabel.text = numberOfItems?.stringValue
             
+            firstItem = defaults.objectForKey("first") as? String
+            secondItem = defaults.objectForKey("second") as? String
+            inputField0.text = firstItem
+            inputField1.text = secondItem
             
+            if let thirdItem = defaults.objectForKey("third") as? String {
+                inputField2.text = thirdItem
+            } else {
+                divider2.hidden = true
+                checkImage2.hidden = true
+                inputField2.hidden = true
+                inputField2.userInteractionEnabled = false
+            }
+            if let fourthItem = defaults.objectForKey("fourth") as? String {
+                inputField3.text = fourthItem
+            } else {
+                divider3.hidden = true
+                checkImage3.hidden = true
+                inputField3.hidden = true
+                inputField3.userInteractionEnabled = false
+            }
+
         } else {
             // reset to default
             resetUI()
-            currentDecider = Decider()
         }
         
     }
@@ -256,17 +270,41 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func decideButtonTapped(sender: AnyObject) {
         switch (self.numberOfItems!.integerValue) {
         case 2:
-            let defaults = NSUserDefaults.standardUserDefaults()
-            currentDecider = Decider(firstItem: inputField0.text, secondItem: inputField1.text, thirdItem: "", fourthItem: "", chosenItem: decide4me(), number: 2)
-            defaults.setObject(currentDecider as? AnyObject, forKey: "decider")
+            var trimmedText0 = inputField0.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            if inputField0.text != "" || inputField1.text != "" || trimmedText0 != "" || trimmedText1 != "" {
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(decide4me(), forKey: "chosen")
+                defaults.setObject(numberOfItems, forKey: "number")
+                defaults.setObject(inputField0.text, forKey: "first")
+                defaults.setObject(inputField1.text, forKey: "second")
+            }
         case 3:
-            let defaults = NSUserDefaults.standardUserDefaults()
-            currentDecider = Decider(firstItem: inputField0.text, secondItem: inputField1.text, thirdItem: inputField2.text, fourthItem: "", chosenItem: decide4me(), number: 3)
-            defaults.setObject(currentDecider as? AnyObject, forKey: "decider")
+            var trimmedText0 = inputField0.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            var trimmedText2 = inputField2.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            if inputField0.text != "" || inputField1.text != "" || inputField2.text != "" || trimmedText0 != "" || trimmedText1 != "" || trimmedText2 != "" {
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(decide4me(), forKey: "chosen")
+                defaults.setObject(numberOfItems, forKey: "number")
+                defaults.setObject(inputField0.text, forKey: "first")
+                defaults.setObject(inputField1.text, forKey: "second")
+                defaults.setObject(inputField2.text, forKey: "third")
+            }
         case 4:
-            let defaults = NSUserDefaults.standardUserDefaults()
-            currentDecider = Decider(firstItem: inputField0.text, secondItem: inputField1.text, thirdItem: inputField2.text, fourthItem: inputField3.text, chosenItem: decide4me(), number: 4)
-            defaults.setObject(currentDecider as? AnyObject, forKey: "decider")
+            var trimmedText0 = inputField0.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            var trimmedText2 = inputField2.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            var trimmedText3 = inputField3.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            if inputField0.text != "" || inputField1.text != "" || inputField2.text != "" || inputField3.text != "" || trimmedText0 != "" || trimmedText1 != "" || trimmedText2 != "" || trimmedText3 != "" {
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(decide4me(), forKey: "chosen")
+                defaults.setObject(numberOfItems, forKey: "number")
+                defaults.setObject(inputField0.text, forKey: "first")
+                defaults.setObject(inputField1.text, forKey: "second")
+                defaults.setObject(inputField2.text, forKey: "third")
+                defaults.setObject(inputField3.text, forKey: "fourth")
+            }
         default:
             break
         }
