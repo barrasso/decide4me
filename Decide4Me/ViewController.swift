@@ -108,6 +108,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         numberOfItems = 2
         checkImage0.hidden = true
         checkImage1.hidden = true
+        clearButton.hidden = true
         
         // hide third and fourth elements
         divider2.hidden = true
@@ -219,6 +220,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == self.inputField0 {
+            self.inputField1.becomeFirstResponder()
+        } else if textField == self.inputField1 && numberOfItems == 2 {
+            self.inputField1.resignFirstResponder()
+        } else if textField == self.inputField1 && (numberOfItems == 3 || numberOfItems == 4) {
+            self.inputField2.becomeFirstResponder()
+        } else if textField == self.inputField2 && numberOfItems == 3 {
+            self.inputField2.resignFirstResponder()
+        } else if textField == self.inputField2 && numberOfItems == 4 {
+            self.inputField3.becomeFirstResponder()
+        } else if textField == self.inputField3 {
+            self.inputField3.resignFirstResponder()
+        }
+        return true
+    }
 
     // MARK: Button Actions
     
@@ -251,11 +269,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.numberOfItems = 3
             divider2.hidden = false
             inputField2.hidden = false
+            clearButton.hidden = false
             inputField2.userInteractionEnabled = true
         case 3:
             self.numberOfItems = 4
             divider3.hidden = false
             inputField3.hidden = false
+            clearButton.hidden = false
             inputField3.userInteractionEnabled = true
         default:
             break
