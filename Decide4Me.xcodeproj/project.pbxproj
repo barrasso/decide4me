@@ -10,8 +10,6 @@
 		043DEC9D1B62982A000B5D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DEC9C1B62982A000B5D43 /* AppDelegate.swift */; };
 		043DEC9F1B62982A000B5D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DEC9E1B62982A000B5D43 /* ViewController.swift */; };
 		043DECA21B62982A000B5D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043DECA01B62982A000B5D43 /* Main.storyboard */; };
-		043DECA41B62982A000B5D43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043DECA31B62982A000B5D43 /* Images.xcassets */; };
-		043DECA71B62982A000B5D43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043DECA51B62982A000B5D43 /* LaunchScreen.xib */; };
 		043DECB31B62982A000B5D43 /* Decide4MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DECB21B62982A000B5D43 /* Decide4MeTests.swift */; };
 		043DECC51B62B0FE000B5D43 /* Divider.png in Resources */ = {isa = PBXBuildFile; fileRef = 043DECC01B62B0FE000B5D43 /* Divider.png */; };
 		043DECCB1B62B272000B5D43 /* decidebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 043DECC81B62B272000B5D43 /* decidebutton.png */; };
@@ -19,6 +17,9 @@
 		043DECCD1B62B272000B5D43 /* scaled-at-300 in Resources */ = {isa = PBXBuildFile; fileRef = 043DECCA1B62B272000B5D43 /* scaled-at-300 */; };
 		043DECD11B62B859000B5D43 /* round-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 043DECD01B62B859000B5D43 /* round-image.png */; };
 		043DECD31B62B979000B5D43 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 043DECD21B62B979000B5D43 /* Logo.png */; };
+		043DECD71B64298A000B5D43 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043DECD61B64298A000B5D43 /* Media.xcassets */; };
+		043DECD91B6433FC000B5D43 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 043DECD81B6433FC000B5D43 /* Podfile */; };
+		8972913EF363B371F1BF8468 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C16926839875746A5962FB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,6 @@
 		043DEC9C1B62982A000B5D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043DEC9E1B62982A000B5D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		043DECA11B62982A000B5D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		043DECA31B62982A000B5D43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		043DECA61B62982A000B5D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		043DECAC1B62982A000B5D43 /* Decide4MeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Decide4MeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043DECB11B62982A000B5D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043DECB21B62982A000B5D43 /* Decide4MeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decide4MeTests.swift; sourceTree = "<group>"; };
@@ -48,6 +47,11 @@
 		043DECCA1B62B272000B5D43 /* scaled-at-300 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "scaled-at-300"; sourceTree = "<group>"; };
 		043DECD01B62B859000B5D43 /* round-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round-image.png"; sourceTree = "<group>"; };
 		043DECD21B62B979000B5D43 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		043DECD61B64298A000B5D43 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		043DECD81B6433FC000B5D43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		23C16926839875746A5962FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BEF19F3A790D1FA2B012B4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA9BDD85441F5B00B31D54DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8972913EF363B371F1BF8468 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,9 +76,12 @@
 		043DEC8E1B62982A000B5D43 = {
 			isa = PBXGroup;
 			children = (
+				043DECD81B6433FC000B5D43 /* Podfile */,
 				043DEC991B62982A000B5D43 /* Decide4Me */,
 				043DECAF1B62982A000B5D43 /* Decide4MeTests */,
 				043DEC981B62982A000B5D43 /* Products */,
+				04602421B3EC98A541163168 /* Pods */,
+				87A8618E8645012EF233A9C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,12 +97,10 @@
 		043DEC991B62982A000B5D43 /* Decide4Me */ = {
 			isa = PBXGroup;
 			children = (
-				043DECBD1B62A1AC000B5D43 /* Models */,
 				043DEC9C1B62982A000B5D43 /* AppDelegate.swift */,
 				043DEC9E1B62982A000B5D43 /* ViewController.swift */,
 				043DECA01B62982A000B5D43 /* Main.storyboard */,
-				043DECA31B62982A000B5D43 /* Images.xcassets */,
-				043DECA51B62982A000B5D43 /* LaunchScreen.xib */,
+				043DECD61B64298A000B5D43 /* Media.xcassets */,
 				043DEC9A1B62982A000B5D43 /* Supporting Files */,
 			);
 			path = Decide4Me;
@@ -139,11 +145,21 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		043DECBD1B62A1AC000B5D43 /* Models */ = {
+		04602421B3EC98A541163168 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				FA9BDD85441F5B00B31D54DD /* Pods.debug.xcconfig */,
+				B1BEF19F3A790D1FA2B012B4 /* Pods.release.xcconfig */,
 			);
-			name = Models;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87A8618E8645012EF233A9C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C16926839875746A5962FB /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043DECB61B62982A000B5D43 /* Build configuration list for PBXNativeTarget "Decide4Me" */;
 			buildPhases = (
+				66FDA0085B848E42A1F86F97 /* Check Pods Manifest.lock */,
 				043DEC931B62982A000B5D43 /* Sources */,
 				043DEC941B62982A000B5D43 /* Frameworks */,
 				043DEC951B62982A000B5D43 /* Resources */,
+				406367CD4E5B75E8508F171B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,13 +247,13 @@
 			files = (
 				043DECA21B62982A000B5D43 /* Main.storyboard in Resources */,
 				043DECC51B62B0FE000B5D43 /* Divider.png in Resources */,
+				043DECD71B64298A000B5D43 /* Media.xcassets in Resources */,
 				043DECCD1B62B272000B5D43 /* scaled-at-300 in Resources */,
 				043DECD31B62B979000B5D43 /* Logo.png in Resources */,
 				043DECD11B62B859000B5D43 /* round-image.png in Resources */,
+				043DECD91B6433FC000B5D43 /* Podfile in Resources */,
 				043DECCC1B62B272000B5D43 /* scaled-at-200 in Resources */,
 				043DECCB1B62B272000B5D43 /* decidebutton.png in Resources */,
-				043DECA71B62982A000B5D43 /* LaunchScreen.xib in Resources */,
-				043DECA41B62982A000B5D43 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +265,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		406367CD4E5B75E8508F171B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66FDA0085B848E42A1F86F97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		043DEC931B62982A000B5D43 /* Sources */ = {
@@ -283,14 +334,6 @@
 				043DECA11B62982A000B5D43 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		043DECA51B62982A000B5D43 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				043DECA61B62982A000B5D43 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,23 +424,31 @@
 		};
 		043DECB71B62982A000B5D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9BDD85441F5B00B31D54DD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Decide4Me/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		043DECB81B62982A000B5D43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BEF19F3A790D1FA2B012B4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Decide4Me/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -454,6 +505,7 @@
 				043DECB81B62982A000B5D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		043DECB91B62982A000B5D43 /* Build configuration list for PBXNativeTarget "Decide4MeTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +514,7 @@
 				043DECBB1B62982A000B5D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

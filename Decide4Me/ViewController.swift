@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -42,10 +43,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var divider2: UIImageView!
     @IBOutlet var divider3: UIImageView!
     
+    @IBOutlet var bannerView: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // set delegates
         inputField0.delegate = self
         inputField1.delegate = self
@@ -94,6 +96,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 NSUserDefaults.standardUserDefaults().removeObjectForKey(key.description)
             }
         }
+        
+        // load admob
+        bannerView.adUnitID = "ca-app-pub-6360908399010535/9985675404"
+        bannerView.rootViewController = self
+        var request:GADRequest = GADRequest()
+        bannerView.loadRequest(request)
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,24 +109,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        // end editing when touching view
+        self.view.endEditing(true)
+    }
+    
     // MARK: Utility Functions
     
     func resetUI() {
         
-        numberOfItems = 2
+        numberOfItems = 4
         checkImage0.hidden = true
         checkImage1.hidden = true
-        clearButton.hidden = true
-        
-        // hide third and fourth elements
-        divider2.hidden = true
-        divider3.hidden = true
         checkImage2.hidden = true
         checkImage3.hidden = true
-        inputField2.hidden = true
-        inputField3.hidden = true
-        inputField2.userInteractionEnabled = false
-        inputField3.userInteractionEnabled = false
+        clearButton.hidden = true
+        clearButton.userInteractionEnabled = false
+        
+        divider0.hidden = false
+        divider1.hidden = false
+        divider2.hidden = false
+        divider3.hidden = false
+        inputField0.hidden = false
+        inputField1.hidden = false
+        inputField2.hidden = false
+        inputField3.hidden = false
     }
     
     func setupUI() {
@@ -134,6 +149,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         inputField1.tag = 1
         inputField2.tag = 2
         inputField3.tag = 3
+    }
+    
+    func displayAlert(title:String)
+    {
+        // display  alert
+        var alert = UIAlertController(title: title, message: "JUST DO IT.", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: { action in
+            // close alert
+        }))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func decide4me() -> String {
@@ -204,6 +230,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 break
             }
         } else {
+            clearButton.hidden = false
+            clearButton.userInteractionEnabled = true
+            
             // show input success
             textField.textColor = UIColor.whiteColor()
             switch(textField.tag) {
@@ -248,13 +277,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         secondItem = ""
         thirdItem = ""
         fourthItem = ""
-        inputField0.text = ""
-        inputField1.text = ""
+        inputField0.text = firstItem
+        inputField1.text = secondItem
+        inputField2.text = thirdItem
+        inputField3.text = fourthItem
         inputField0.textColor = UIColor.whiteColor()
         inputField1.textColor = UIColor.whiteColor()
         inputField2.textColor = UIColor.whiteColor()
         inputField3.textColor = UIColor.whiteColor()
-        numberOfItems = 2
+        numberOfItems = 4
         numberOfItemsLabel.text = numberOfItems?.stringValue
         
         for key in NSUserDefaults.standardUserDefaults().dictionaryRepresentation().keys {
@@ -269,13 +300,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.numberOfItems = 3
             divider2.hidden = false
             inputField2.hidden = false
-            clearButton.hidden = false
             inputField2.userInteractionEnabled = true
         case 3:
             self.numberOfItems = 4
             divider3.hidden = false
             inputField3.hidden = false
-            clearButton.hidden = false
             inputField3.userInteractionEnabled = true
         default:
             break
@@ -326,7 +355,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var trimmedText1 = inputField1.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             if inputField0.text != "" && inputField1.text != "" && trimmedText0 != "" && trimmedText1 != "" {
                 let defaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(decide4me(), forKey: "chosen")
+                self.chosenItem = decide4me()
+                displayAlert(self.chosenItem!)
+                defaults.setObject(self.chosenItem, forKey: "chosen")
                 defaults.setObject(numberOfItems, forKey: "number")
                 defaults.setObject(inputField0.text, forKey: "first")
                 defaults.setObject(inputField1.text, forKey: "second")
@@ -337,7 +368,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var trimmedText2 = inputField2.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             if inputField0.text != "" && inputField1.text != "" && inputField2.text != "" && trimmedText0 != "" && trimmedText1 != "" && trimmedText2 != "" {
                 let defaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(decide4me(), forKey: "chosen")
+                self.chosenItem = decide4me()
+                displayAlert(self.chosenItem!)
+                defaults.setObject(self.chosenItem, forKey: "chosen")
                 defaults.setObject(numberOfItems, forKey: "number")
                 defaults.setObject(inputField0.text, forKey: "first")
                 defaults.setObject(inputField1.text, forKey: "second")
@@ -350,7 +383,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             var trimmedText3 = inputField3.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             if inputField0.text != "" && inputField1.text != "" && inputField2.text != "" && inputField3.text != "" && trimmedText0 != "" && trimmedText1 != "" && trimmedText2 != "" && trimmedText3 != "" {
                 let defaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(decide4me(), forKey: "chosen")
+                self.chosenItem = decide4me()
+                displayAlert(self.chosenItem!)
+                defaults.setObject(self.chosenItem, forKey: "chosen")
                 defaults.setObject(numberOfItems, forKey: "number")
                 defaults.setObject(inputField0.text, forKey: "first")
                 defaults.setObject(inputField1.text, forKey: "second")
