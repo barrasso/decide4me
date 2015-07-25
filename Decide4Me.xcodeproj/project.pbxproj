@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "decide4me" */;
+			buildConfigurationList = 043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "Decide4Me" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -489,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "decide4me" */ = {
+		043DEC921B62982A000B5D43 /* Build configuration list for PBXProject "Decide4Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				043DECB41B62982A000B5D43 /* Debug */,
